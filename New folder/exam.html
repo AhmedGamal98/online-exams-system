@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exam</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style5.css">
+
+</head>
+<body>
+	<fieldset>
+		<legend>Exam</legend>
+		<div id="count-down">
+			
+		</div>
+		<br><br><br>
+		<form action="account.html" onclick="alert('With best wishes')">
+		<label>Qustion (1):-------------------</label><br>
+		<input type="radio" name="q1" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q1" value="second choice">Second choice<br>
+		<input type="radio" name="q1" value="Third choice">Third choice<br>
+		<input type="radio" name="q1" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (2):-------------------</label><br>
+		<input type="radio" name="q2" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q2" value="second choice">Second choice<br>
+		<input type="radio" name="q2" value="Third choice">Third choice<br>
+		<input type="radio" name="q2" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (3):-------------------</label><br>
+		<input type="radio" name="q3" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q3" value="second choice">Second choice<br>
+		<input type="radio" name="q3" value="Third choice">Third choice<br>
+		<input type="radio" name="q3" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (4):-------------------</label><br>
+		<input type="radio" name="q4" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q4" value="second choice">Second choice<br>
+		<input type="radio" name="q4" value="Third choice">Third choice<br>
+		<input type="radio" name="q4" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (5):-------------------</label><br>
+		<input type="radio" name="q5" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q5" value="second choice">Second choice<br>
+		<input type="radio" name="q5" value="Third choice">Third choice<br>
+		<input type="radio" name="q5" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (6):-------------------</label><br>
+		<input type="radio" name="q6" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q6" value="second choice">Second choice<br>
+		<input type="radio" name="q6" value="Third choice">Third choice<br>
+		<input type="radio" name="q6" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (7):-------------------</label><br>
+		<input type="radio" name="q7" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q7" value="second choice">Second choice<br>
+		<input type="radio" name="q7" value="Third choice">Third choice<br>
+		<input type="radio" name="q7" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (8):-------------------</label><br>
+		<input type="radio" name="q8" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q8" value="second choice">Second choice<br>
+		<input type="radio" name="q8" value="Third choice">Third choice<br>
+		<input type="radio" name="q8" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (9):-------------------</label><br>
+		<input type="radio" name="q9" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q9" value="second choice">Second choice<br>
+		<input type="radio" name="q9" value="Third choice">Third choice<br>
+		<input type="radio" name="q9" value="Fourth choice">Fourth choice<br><br><hr><br>
+		<label>Qustion (10):-------------------</label><br>
+		<input type="radio" name="q10" value="Fisrt choice">Fisrt choice<br>
+		<input type="radio" name="q10" value="second choice">Second choice<br>
+		<input type="radio" name="q10" value="Third choice">Third choice<br>
+		<input type="radio" name="q10" value="Fourth choice">Fourth choice<br><br>
+		<input type="submit" value="submit"><br>
+		<input type="RESET" value="Clear !">
+		</form>
+	</fieldset>
+<script type="text/javascript">
+		var seconds=15,
+		 countDiv=document.getElementById('count-down'),
+		 secondPass,
+		 countDown=setInterval(function (){
+			"use strict";
+			secondPass();
+		},1000);
+		function secondPass(){
+			"use strict";
+			var minutes = Math.floor(seconds/60),
+			remSeconds =seconds%60;
+			countDiv.innerHTML=minutes+":"+remSeconds; 
+			if (seconds < 10) {
+				remSeconds = "0" +remSeconds;
+			}
+			if(seconds > 0){
+				seconds -= 1;
+			}
+			else{
+				clearInterval(countDown);
+				countDiv.innerHTML="Done";
+
+			}
+		}
+	</script>
+</body>
+</html>

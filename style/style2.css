@@ -1,0 +1,49 @@
+body{
+	background-color: #333;
+	font-family: Arial,Tahoma;
+}
+fieldset{
+	background: white;
+	margin: 20px auto;
+	padding: 20px;
+	width: 600px;
+}
+legend{
+	border: 1px solid #888;
+	padding: 7px;
+	background: white;
+	font-size: 25px;
+}
+input,label{
+	display: block;
+	padding: 5px;
+	margin-bottom: 3px;
+	font-size: 21px;
+}
+input{
+	margin-left: 50px;
+
+}
+select{
+	margin-left: 50px;
+}
+.radio,.f{
+	display: inline;
+}
+.botton {
+	font-family: sans-serif;
+	font-size: 15px;
+	padding: 12px;
+	background: #333;
+	color: white;
+	margin-left: 480px;
+	width: 100px;
+	height: 40px;
+}
+p{
+	margin-top: 0px;
+	margin-left: 30px;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-style: italic;
+}
